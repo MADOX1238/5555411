@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>صفحة المستخدم - Spherely</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #3b5998;
+      color: white;
+      padding: 20px 0;
+      font-size: 24px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .main-container {
+      display: flex;
+      margin-top: 20px;
+    }
+    .left-sidebar {
+      width: 250px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .left-sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .left-sidebar ul li {
+      padding: 10px 0;
+      font-size: 16px;
+    }
+    .left-sidebar ul li a {
+      text-decoration: none;
+      color: #3b5998;
+    }
+    .left-sidebar ul li a:hover {
+      text-decoration: underline;
+    }
+    .feed {
+      flex-grow: 1;
+      padding: 20px;
+      background-color: white;
+      margin-left: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .post-box textarea {
+      width: 100%;
+      height: 80px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+    .post-box button {
+      margin-top: 10px;
+      background-color: #3b5998;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .post-box button:hover {
+      background-color: #365f8f;
+    }
+    .post {
+      margin-top: 20px;
+      background-color: #f7f7f7;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    .post-header h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+    .post-footer {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    مرحبًا، اسم المستخدم
+  </header>
+  <div class="main-container">
+    <div class="left-sidebar">
+      <ul>
+        <li><a href="#">الصفحة الرئيسية</a></li>
+        <li><a href="#">الأصدقاء</a></li>
+        <li><a href="#">الإشعارات</a></li>
+      </ul>
+    </div>
+    <div class="feed">
+      <div class="post-box">
+        <textarea placeholder="اكتب منشورك هنا..."></textarea>
+        <button>نشر</button>
+      </div>
+      <div class="post">
+        <div class="post-header">
+          <h3>اسم المستخدم</h3>
+          <span>منذ 5 دقائق</span>
+        </div>
+        <div class="post-content">
+          هذا هو أول منشور على الصفحة.
+        </div>
+        <div class="post-footer">
+          <span>أعجبني</span> | <span>تعليق</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body></html>
